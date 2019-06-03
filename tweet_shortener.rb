@@ -59,7 +59,7 @@ end
 def shortened_tweet_truncator(tweet)
   new_tweet = selective_tweet_shortener(tweet)
   if new_tweet.length > 140
-    shorter_tweet = "#{new_tweet[0...136]} ..."
+    shorter_tweet = "#{new_tweet[0...137]}..."
   else
     new_tweet
   end 
