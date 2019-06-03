@@ -58,9 +58,9 @@ end
 
 def shortened_tweet_truncator(tweet)
   new_tweet = selective_tweet_shortener(tweet)
+  binding.pry
   if new_tweet > 140
     shorter_tweet = "#{new_tweet[0...135]} ..."
-    binding.pry
   else
     new_tweet
   end 
